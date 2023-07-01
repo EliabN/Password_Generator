@@ -6,6 +6,8 @@ var password = [];
 
 // Generate password that meets certain criteria
 function generatePassword() {
+  // Clear old password
+  password = [];
 
   // Ask user for their choice of password length
   var userNumb = parseInt(window.prompt("Please enter the length of the password; Recommended at least 8 to 14 characters (No more than 128 characters)."));
@@ -80,7 +82,6 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
-  generatePassword();
   // Create an element from document
   var passwordText = document.querySelector("#password");
 
