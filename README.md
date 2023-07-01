@@ -1,5 +1,6 @@
 # Password_Generator
 Web application to generator password
+Website -> https://eliabn.github.io/Password_Generator/
 
 
 ## User Story
@@ -11,4 +12,4 @@ SO THAT I can create a strong password that provides greater security
 
 ```
 ## Preview Image
-![The Password Generator application displays a red button to "Generate Password".](./assets/images/03-javascript-homework-demo.png)
+![The Password Generator application displays a red button to "Generate Password".](./Assets/images/03-javascript-homework-demo.png)
