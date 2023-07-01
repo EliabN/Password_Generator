@@ -1,8 +1,8 @@
-## Password_Generator
+# Password_Generator
 Web application to generator password
 
 
-# User Story
+## User Story
 
 ```
 AS AN employee with access to sensitive data
