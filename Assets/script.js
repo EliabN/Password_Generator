@@ -10,10 +10,16 @@ function generatePassword() {
   // Ask user for their choice of password length
   var userNumb = parseInt(window.prompt("Please enter the length of the password; Recommended at least 8 to 14 characters (No more than 128 characters)."));
   
-  // If length less than 8 or more than 128, immediately end function
+  // If length less than 8 or more than 128, display message then restart process
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return
   if (userNumb < 8 || userNumb > 128) {
     window.alert("Error: Enter required length!");
+    return generatePassword();
+  }
+
+  // If user enters letters display message then restart process
+  if (isNaN(userNumb)) {
+    window.alert("Error: Numbers only!");
     return generatePassword();
   }
 
@@ -38,7 +44,6 @@ function generatePassword() {
       var index = Math.floor(Math.random() * alphabetLower.length);
       password = (password + alphabetLower[index]);
     }
-
 
     // If user pressed OK on upperCase popup run if statement
     if (upperCase) {
