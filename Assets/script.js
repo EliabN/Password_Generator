@@ -5,6 +5,15 @@ var password = [];
 
 function generatePassword() {
 
+  var userNumb = parseInt(window.prompt("Please enter the length of the password; Recommended at least 8 to 14 characters (No more than 128 characters)."));
+  
+
+  if (userNumb < 8 || userNumb > 128) {
+    window.alert("Error: Enter required length!");
+    return generatePassword();
+  }
+
+  
   var lowerCase = window.confirm("Would you like to include lowercase");
 
   var upperCase = window.confirm("Would you like to include uppercase");
