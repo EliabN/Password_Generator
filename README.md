@@ -1,6 +1,6 @@
 # Password_Generator
-Web application to generator password. <b>
-Website -> https://eliabn.github.io/Password_Generator/
+Web application to generator password.
+###Website -> https://eliabn.github.io/Password_Generator/
 
 
 ## User Story
